@@ -158,6 +158,9 @@ h2 {
 /* Main - block Studio - page */
 
 .title-section {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +208,33 @@ h2 {
   line-height: 1.7;
   color: var(--secondary-text-color);
   width: calc(100% / 4);
+}
+
+.about-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: var(--background-light-color);
+  margin-bottom: 30px;
+}
+
+.antena-icon::before {
+  background-image: url('../images/svg/antenna.svg');
+}
+
+.clock-icon::before {
+  background-image: url('../images/svg/clock.svg');
+}
+
+.diagram-icon::before {
+  background-image: url('../images/svg/diagram.svg');
+}
+
+.astro-icon::before {
+  background-image: url('../images/svg/astronaut.svg');
 }
 
 .about-item-title {
@@ -274,6 +304,53 @@ h2 {
   text-align: center;
   color: var(--secondary-text-color);
   margin-top: 10px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.client-item {
+  /* border: 1px solid #afb1b8;
+  border-radius: 4px; */
+}
+
+.client-item {
+  height: 92px;
+  width: 170px;
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: center;
+}
+
+.client-1 {
+  background-image: url('../images/svg/client-1.svg');
+}
+
+.client-2 {
+  background-image: url('../images/svg/client-2.svg');
+}
+
+.client-3 {
+  background-image: url('../images/svg/client-3.svg');
+}
+
+.client-4 {
+  background-image: url('../images/svg/client-4.svg');
+}
+
+.client-5 {
+  background-image: url('../images/svg/client-5.svg');
+}
+
+.client-6 {
+  background-image: url('../images/svg/client-6.svg');
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
 }
 
 /* Main-block Portfolio-Page */
@@ -355,6 +432,8 @@ h2 {
   line-height: 1.9;
   color: var(--secondary-text-color);
 }
+
+/* Contacts - Page, Main block */
 
 /* Footer - block */
 
