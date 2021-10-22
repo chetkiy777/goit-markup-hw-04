@@ -155,9 +155,6 @@ h2 {
   color: var(--accent-color);
 }
 
-.contacts-icon-block {
-  display: inline-block;
-}
 
 .mail-icon {
   height: 12px;
@@ -312,34 +309,26 @@ h2 {
   margin-top: 10px;
 }
 
-.link-list {
+.team-icon-list {
   display: flex;
+  justify-content: center;
+  gap: 10px;
   margin: 16px 32px 30px 32px;
-  justify-content: space-between;
 }
 
-.link-item {
+.team-icon {
+  display: inline-flex;
   height: 44px;
   width: 44px;
-  background-position: center;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 12px;
+  fill: #AFB1B8;
 }
 
-.instagram {
-  background-image: url('../images/svg/instagram.svg');
-}
-
-.twitter {
-  background-image: url('../images/svg/twitter.svg');
-}
-
-.facebook {
-  background-image: url('../images/svg/facebook.svg');
-}
-
-.linkedin {
-  background-image: url('../images/svg/linkedin.svg');
+.team-icon:hover,
+.team-icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--main-white-color);
 }
 
 /* Clients- section */
@@ -535,17 +524,19 @@ h2 {
   margin-top: 20px;
 }
 
-.link-box {
+.welcome-item {
   display: inline-flex;
   height: 44px;
   width: 44px;
+  background-color:rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
-  padding: 9px 12px;
+  padding: 12px;
+  fill: var(--main-white-color);
 }
 
-.link-box + .link-box {
-  margin-left: 10px;
-}
+.welcome-item:focus,
+.welcome-item:hover {
+  background-color: var(--accent-color);
+} 
+
 
