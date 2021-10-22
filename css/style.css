@@ -139,6 +139,20 @@ h2 {
   margin-right: 50px;
 }
 
+.mail-icon {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.mobile-icon {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
 .contacts-mail,
 .contacts-number {
   font-weight: 500;
@@ -148,25 +162,15 @@ h2 {
   color: var(--secondary-text-color);
 }
 
-.contacts-mail:hover,
-.contacts-number:hover,
-.contacts-mail:focus,
-.contacts-number:focus {
+.mail-icon:hover,
+.mail-icon:focus,
+.mobile-icon:hover,
+.mobile-icon:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
 
-.mail-icon {
-  height: 12px;
-  width: 16px;
-  margin-right: 10px;
-}
-
-.mobile-icon {
-  height: 16px;
-  width: 10px;
-  margin-right: 10px;
-}
 
 
 /* Main - block Studio - page */
@@ -348,7 +352,13 @@ h2 {
   background-color: #ffffff;
   background-size: contain;
   background-position: center;
+  fill: #AFB1B8;
 }
+
+.client-item:hover {
+  fill: var(--accent-color);
+}
+
 
 
 .client-item + .client-item {
