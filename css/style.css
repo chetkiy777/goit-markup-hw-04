@@ -135,6 +135,10 @@ h2 {
   margin-left: auto;
 }
 
+.contacts-links {
+  display: inline-flex;
+}
+
 .contacts-mail {
   margin-right: 50px;
 }
@@ -163,11 +167,18 @@ h2 {
 }
 
 .contacts-mail:hover,
-.contacts-number:hover,
-.mail-icon:hover,
-.mobile-icon:hover {
-  fill: var(--accent-color);
+.contacts-number:hover {
   color: var(--accent-color);
+}
+
+/* .contacts-mail:hover .mobile-icon, */
+.contacts-number:hover .mobile-icon {
+  fill: var(--accent-color);
+}
+
+.contacts-mail:hover .mail-icon {
+  /* .contacts-number:hover .mail-icon { */
+  fill: var(--accent-color);
 }
 
 /* Main - block Studio - page */
@@ -358,7 +369,6 @@ h2 {
 .client-link:hover,
 .client-link:focus {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .client-item + .client-item {
@@ -449,6 +459,11 @@ h2 {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
 }
 
 /* Contacts - Page, Main block */
